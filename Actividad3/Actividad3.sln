@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryNonSOLID", "LibraryNonSOLID\LibraryNonSOLID.csproj", "{1964A1D7-9657-448F-B7DC-24FDA76A2999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySOLId", "LibrarySOLId\LibrarySOLId.csproj", "{8A361B09-AD1E-4FAF-BAA0-0B7E83A04F31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1964A1D7-9657-448F-B7DC-24FDA76A2999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1964A1D7-9657-448F-B7DC-24FDA76A2999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1964A1D7-9657-448F-B7DC-24FDA76A2999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1964A1D7-9657-448F-B7DC-24FDA76A2999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A361B09-AD1E-4FAF-BAA0-0B7E83A04F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A361B09-AD1E-4FAF-BAA0-0B7E83A04F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A361B09-AD1E-4FAF-BAA0-0B7E83A04F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A361B09-AD1E-4FAF-BAA0-0B7E83A04F31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
