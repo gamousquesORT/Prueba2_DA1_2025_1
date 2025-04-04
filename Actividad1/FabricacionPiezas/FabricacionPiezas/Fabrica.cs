@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace FabricantePiezas;
+namespace FabricacionPiezas;
 public interface IElementoConNombre
 {
     string GetNombre();
@@ -9,7 +6,6 @@ public interface IElementoConNombre
 
 public class Fabricante
 {
-    private static long _id = 0;
     private static long _numeroDeSerie = 0;
     private List<Pieza> _piezas;
     public string Nombre { get; set; }
@@ -17,12 +13,11 @@ public class Fabricante
     public Fabricante(string nombre)
     {
         Nombre = nombre;
-        _id = ++_id;
         _piezas = new List<Pieza>();
     }
     public Pieza CreatePieza()
     {
-        string piezaNombre = _numeroDeSerie.ToString() + Nombre.Substring(0, 3);
+        string piezaNombre = _numeroDeSerie.ToString() + "-" + Nombre;
         Pieza pieza = new Pieza(this, piezaNombre);
         Piezas.Add(pieza);
         return pieza;

@@ -1,5 +1,4 @@
-﻿namespace FabricantePiezas;
-
+﻿namespace FabricacionPiezas;
 
 public class Program
 {
@@ -10,11 +9,13 @@ public class Program
         LoadPiezas(fabricante);
 
         IterateThroughPiezas(fabricante);
+        
+        AnotherWayToIterateThroughPiezas(fabricante);
     }
 
     private static void LoadPiezas(Fabricante fabricante)
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 1; i <= 5; i++)
         {
             fabricante.CreatePieza();
         }
@@ -28,4 +29,11 @@ public class Program
         }
     }
 
+    public static void AnotherWayToIterateThroughPiezas(Fabricante fabricante)
+    {
+        foreach (Pieza elemento in fabricante.Piezas)
+        {
+            Console.WriteLine(elemento.GetNombre());
+        }
+    }
 }
